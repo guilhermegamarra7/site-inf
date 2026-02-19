@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciência da Computação - UFRGS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.inf.ufrgs.br/site/wp-content/themes/UfrgsINF/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="container">
+        
+        <nav>
+            <div class="nav-left">
+                <div class="nav-logo">INF.UFRGS</div>
+                <button class="theme-toggle" onclick="toggleTheme()">[Light/Dark]</button>
+            </div>
+            <p class="nav-link">Junte-se_v2026</p>
+        </nav>
+
+        <h1>
+            &lt; HELLO WORLD,<br>
+            <span>UFRGS /&gt;</span><span class="cursor"></span>
+        </h1>
+        
+        <p class="lead">Venha estudar na MELHOR faculdade de computação do Rio Grande do Sul</p>
+
+        <div class="status-bar">
+            <div class="status-item">[MEC_NOTA]: <span class="status-value">5.0 (MAX)</span></div>
+            <div class="status-item">[DESDE]: <span class="status-value">1968</span></div>
+            <div class="status-item">[EMPREGABILIDADE]: <span class="status-value">98%</span></div>
+            <div class="status-item">[LOCALIZAÇÃO]: <span class="status-value">Campus_do_Vale</span></div>
+        </div>
+
+        <h2>// Bem-Vindo!</h2>
+        <div class="changelog-box">
+        <p class="welcome-text">Pensando em cursar Computação? Quer entender o código no console abaixo? Você está no lugar certo! 
+        A programação vai muito além de linhas de comando; ela é a capacidade de <strong style="color: var(--ufrgs-red);">resolver problemas complexos</strong>. 
+        O código é apenas uma ferramenta. O que importa é criar uma <strong style="color: var(--tech-blue);">base lógica sólida</strong> para que você não se prenda a tecnologias específicas, mas saiba escolher a melhor solução para cada desafio.
+        <br>
+        <br>
+        Por aqui, passaram grandes cientistas. Temos certeza de que você será o próximo.
+        </p>
+        </div>
+        
+        <div class="changelog-box">
+            <span>Clique em <strong style="color: var(--tech-blue);">Run Code</strong> e conheça mais sobre o nosso curso de graduação!</span>
+         </div>
+    
+        <div class="ide-container draggable-window">
+            <div class="ide-header window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <span class="filename">main.cpp</span>
+                <button class="run-btn" id="runBtn" onclick="runCode()">▶ Run Code</button>
+            </div>
+            
+            <div class="ide-body">
+                <div><span class="line-num">1</span> <span class="keyword">#include</span> &lt;iostream&gt;</div>
+                <div><span class="line-num">2</span> <span class="keyword">using</span> <span class="keyword">namespace</span> std;</div>
+                <div><span class="line-num">3</span></div>
+                <div><span class="line-num">4</span> <span class="keyword">int</span> <span class="function">main</span>() {</div>
+                <div><span class="line-num">5</span> &nbsp;&nbsp;&nbsp;&nbsp;string student = <span class="string">"Você"</span>;</div>
+                <div><span class="line-num">6</span> &nbsp;&nbsp;&nbsp;&nbsp;cout << <span class="string">"Compilando seu futuro..."</span> << endl;</div>
+                <div><span class="line-num">7</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;</div>
+                <div><span class="line-num">8</span> }</div>
+            </div>
+
+            <div class="console-output" id="consoleOutput">
+                root@server:~$ g++ main.cpp -o future<br>
+                root@server:~$ ./future<br>
+                > Compilando seu futuro...<br>
+                > <span style="color: #27c93f">SUCCESS:</span> Welcome to Instituto de Informática! 🚀
+            </div>
+        </div>
+
+        <span class="run-hint" id="runHint">Aperte o "Run Code" para terminar a construção do resto do site<span class="cursor2"></span></span>
+
+        <div id="main-content" class="content-locked">
+
+            <h2>// O Curso</h2>
+            
+            <div class="changelog-box">
+                <span class="changelog-header">Novo Currículo 2026 (Resolução 01/2025)</span>
+                <p>A partir do semestre 2026/1, o curso de Ciência da Computação da UFRGS recebe uma atualização significativa de Currículo! Modernizamos a arquitetura pedagógica para alinhar-se às demandas atuais de Engenharia de Software, IA e Inovação.
+                    <br>
+                    <br>
+                    Veja as principais mudanças que realizamos para que vocês tenham uma das mais modernas experiências com a Computação no país:
+                </p>
+                
+                <div class="changelog-section">
+                    <span class="changelog-title">1. Novidades nas disciplinas</span>
+                    <p style="margin-bottom:5px; font-size:0.85rem; opacity:0.8;">O currículo expandiu o núcleo obrigatório para fortalecer a base e a prática profissional desde o início:</p>
+                    <ul class="changelog-list">
+                        <li class="marker-plus"><strong>Introdução à Ciência da Computação (Etapa 1):</strong> Visão geral da carreira, ética, ferramentas essenciais (Git, Linux, LaTeX) e impacto da computação.</li>
+                        <li class="marker-plus"><strong>Teste e Verificação de Software (Etapa 2):</strong> Foco antecipado em qualidade, validação e verificação formal de software.</li>
+                        <li class="marker-plus"><strong>Projeto de Circuitos Digitais (Etapa 3):</strong> Aprofundamento em hardware, incluindo síntese lógica e linguagens de descrição de hardware (Verilog/VHDL).</li>
+                        <li class="marker-plus"><strong>Projeto em Ciência e Inovação (Etapa 5):</strong> Uma atividade integradora massiva (120h) focada em método científico, pesquisa e inovação tecnológica.</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-section">
+                    <span class="changelog-title">2. Alterações e renomeações</span>
+                    <p style="margin-bottom:5px; font-size:0.85rem; opacity:0.8;">Módulos antigos foram atualizadas para versões completamente modernas:</p>
+                    <ul class="changelog-list">
+                        <li class="marker-mod"><strong>Pensamento Computacional:</strong> Substitui "Fundamentos de Algoritmos", focando em paradigmas funcionais e resolução de problemas.</li>
+                        <li class="marker-mod"><strong>Algoritmos e Programação:</strong> Atualizada para incluir ponteiros, depuração e alocação dinâmica desde o início.</li>
+                        <li class="marker-mod"><strong>Visão Computacional e Computação Gráfica:</strong> Disciplinas modernizadas para incluir tecnologias atuais como renderização baseada em física e modelos de aprendizado profundo.</li>
+                        <li class="marker-del"><strong>Exclusões:</strong> Disciplinas como "Compiladores" (a antiga obrigatória) e "Teoria dos Grafos" foram reorganizadas ou absorvidas por novas estruturas como "Linguagens de Programação I e II" e "Projeto e Análise de Algoritmos I".</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-section">
+                    <span class="changelog-title">3. Créditos</span>
+                    <p style="margin-bottom:5px; font-size:0.85rem; opacity:0.8;">Houve um ajuste no balanceamento entre disciplinas obrigatórias e eletivas para garantir uma formação mais sólida:</p>
+                    <ul class="changelog-list">
+                        <li class="marker-info"><strong>Carga Obrigatória:</strong> Aumentou para 166 créditos (antes 152).</li>
+                        <li class="marker-info"><strong>Carga Eletiva:</strong> Ajustada para 16 créditos, permitindo especialização focada.</li>
+                        <li class="marker-info"><strong>Total do Curso:</strong> ~3400 horas.</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-section">
+                    <span class="changelog-title">4. Política de Migração</span>
+                    <ul class="changelog-list">
+                        <li class="marker-info">A alteração será implementada para todos os alunos ativos do curso. Uma tabela de liberação (equivalência) foi criada para garantir que créditos de disciplinas antigas (como "Redes N" ou "Arquitetura I") sejam aproveitados nas novas estruturas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>// Lab_Surveillance (Infrastructure)</h2>
+            <div class="surveillance-container">
+                <div class="cam-feed">
+                    <div class="cam-overlay">CAM_01 [CEI_INCUBATOR]</div>
+                    <img src="fotos/cei.jpg" class="cam-img" alt="CEI">
+                </div>
+                <div class="cam-feed">
+                    <div class="cam-overlay">CAM_02 [RU]</div>
+                    <img src="fotos/ru.png" class="cam-img" alt="RU">
+                </div>
+                <div class="cam-feed">
+                    <div class="cam-overlay">CAM_03 [SERVER_ROOM]</div>
+                    <img src="fotos/serverroom.png" class="cam-img" alt="Servers">
+                </div>
+                <div class="cam-feed">
+                    <div class="cam-overlay">CAM_04 [LABORATORIOS]</div>
+                    <img src="fotos/laboratorios.png" class="cam-img" alt="LAB">
+                </div>
+            </div>
+
+            <h2>// Ecossistema</h2>
+            <p>A sala de aula é apenas o main(). O verdadeiro processamento acontece nos laboratórios e incubadoras.</p>
+            
+            <ul class="tech-stack">
+                <li>CEI Startups<span>Incubadora de empresas de base tecnológica. Onde nascem os unicórnios.</span></li>
+                <li>Pesquisa e Extensão<span>Aproveite diversas oportunidades oferecidas para os alunos em projetos que atuam no desenvolvimento de novas tecnologias relevantes à sociedade.</span></li>
+                <li>PPCG<span>Após a graduação, a UFRGS oferece um dos mais reconhecidos Programa de Pós-Graduação em Computação do mundo, com reconhecimento internacional.</span></li>
+            </ul>
+
+            <h2>// Currículo completo</h2>
+            <p>Clique nas cadeiras para ver as liberações e os pré-requisitos delas.</p>
+
+            <div class="roadmap-container">
+                <span class="roadmap-title">// Escolha uma área de seu interesse:</span>
+                <div class="roadmap-buttons">
+                    <button class="btn-roadmap" onclick="toggleRoadmap('game', this)">Arquiteto de Games</button>
+                    <button class="btn-roadmap" onclick="toggleRoadmap('ai', this)">Cientista de IA</button>
+                    <button class="btn-roadmap" onclick="toggleRoadmap('cyber', this)">Ciber segurança</button>
+                    <button class="btn-roadmap" onclick="toggleRoadmap('system', this)">Arquiteto de sistemas</button>
+                </div>
+            </div>
+
+            <div class="dependency-legend">
+                <div class="legend-item"><div class="legend-dot legend-selected"></div> Selecionada</div>
+                <div class="legend-item"><div class="legend-dot legend-prereq"></div> Pré-requisito (Precisa fazer)</div>
+                <div class="legend-item"><div class="legend-dot legend-unlock"></div> Libera (Poderá fazer)</div>
+            </div>
+
+            <div class="tree-controls">
+                <button class="btn-control" onclick="expandAll()">[+] Clique para expandir tudo</button>
+                <button class="btn-control" onclick="collapseAll()">[-] Clique para esconder tudo</button>
+            </div>
+
+            <div class="curriculum-tree">
+                <details>
+                    <summary>[Etapa_01]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="ALP"><span class="subject-name">Algoritmos e Programação</span> <span class="subject-code">ALP</span></div>
+                        <div class="subject-item" data-code="Calc1"><span class="subject-name">Cálculo e Geometria Analítica I</span> <span class="subject-code">Calc1</span></div>
+                        <div class="subject-item" data-code="IntroCIC"><span class="subject-name">Introdução à Ciência da Computação</span> <span class="subject-code">IntroCIC</span></div>
+                        <div class="subject-item" data-code="Logica"><span class="subject-name">Lógica para Computação</span> <span class="subject-code">Logica</span></div>
+                        <div class="subject-item" data-code="PC"><span class="subject-name">Pensamento Computacional</span> <span class="subject-code">PC</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_02]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="Arq"><span class="subject-name">Arquitetura de Computadores</span> <span class="subject-code">Arq</span></div>
+                        <div class="subject-item" data-code="Calc2"><span class="subject-name">Cálculo e Geometria Analítica II</span> <span class="subject-code">Calc2</span></div>
+                        <div class="subject-item" data-code="ED"><span class="subject-name">Estruturas de Dados</span> <span class="subject-code">ED</span></div>
+                        <div class="subject-item" data-code="MatDisc"><span class="subject-name">Matemática Discreta B</span> <span class="subject-code">MatDisc</span></div>
+                        <div class="subject-item" data-code="ProbEst"><span class="subject-name">Probabilidade e Estatística</span> <span class="subject-code">ProbEst</span></div>
+                        <div class="subject-item" data-code="VerifTeste"><span class="subject-name">Teste e Verificação de Software</span> <span class="subject-code">VerifTeste</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_03]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="BD"><span class="subject-name">Bancos de Dados</span> <span class="subject-code">BD</span></div>
+                        <div class="subject-item" data-code="TCP"><span class="subject-name">Desenvolvimento de Software</span> <span class="subject-code">TCP</span></div>
+                        <div class="subject-item" data-code="CDNovo"><span class="subject-name">Projeto de Circuitos Digitais</span> <span class="subject-code">CDNovo</span></div>
+                        <div class="subject-item" data-code="PAA1"><span class="subject-name">Projeto e Análise de Algoritmos I</span> <span class="subject-code">PAA1</span></div>
+                        <div class="subject-item" data-code="TeoComp1"><span class="subject-name">Teoria da Computação I</span> <span class="subject-code">TeoComp1</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_04]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="ES"><span class="subject-name">Engenharia de Software N</span> <span class="subject-code">ES</span></div>
+                        <div class="subject-item" data-code="IHC"><span class="subject-name">Interação Humano-Computador</span> <span class="subject-code">IHC</span></div>
+                        <div class="subject-item" data-code="OrgComp"><span class="subject-name">Organização de Computadores</span> <span class="subject-code">OrgComp</span></div>
+                        <div class="subject-item" data-code="PAA2"><span class="subject-name">Projeto e Análise de Algoritmos II</span> <span class="subject-code">PAA2</span></div>
+                        <div class="subject-item" data-code="TeoComp2"><span class="subject-name">Teoria da Computação II</span> <span class="subject-code">TeoComp2</span></div>
+                        <div class="subject-item" data-code="AlgLin"><span class="subject-name">Álgebra Linear I</span> <span class="subject-code">AlgLin</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_05]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="CGVis"><span class="subject-name">Computação Gráfica e Visualização</span> <span class="subject-code">CGVis</span></div>
+                        <div class="subject-item" data-code="CalcNum"><span class="subject-name">Cálculo Numérico A</span> <span class="subject-code">CalcNum</span></div>
+                        <div class="subject-item" data-code="IA"><span class="subject-name">Inteligência Artificial</span> <span class="subject-code">IA</span></div>
+                        <div class="subject-item" data-code="SisOp"><span class="subject-name">Sistemas Operacionais I</span> <span class="subject-code">SisOp</span></div>
+                        <div class="subject-item" data-code="ProjCI"><span class="subject-name">Projeto em Ciência e Inovação</span> <span class="subject-code">ProjCI</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_06]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="ML"><span class="subject-name">Aprendizado de Máquina (Machine Learning)</span> <span class="subject-code">ML</span></div>
+                        <div class="subject-item" data-code="LP1"><span class="subject-name">Linguagens de Programação I</span> <span class="subject-code">LP1</span></div>
+                        <div class="subject-item" data-code="PIVC"><span class="subject-name">Proc. de Imagens e Visão Computacional</span> <span class="subject-code">PIVC</span></div>
+                        <div class="subject-item" data-code="ProgPar"><span class="subject-name">Programação Paralela</span> <span class="subject-code">ProgPar</span></div>
+                        <div class="subject-item" data-code="Redes"><span class="subject-name">Redes de Computadores e Internet</span> <span class="subject-code">Redes</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_07]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="Seg"><span class="subject-name">Cibersegurança</span> <span class="subject-code">Seg</span></div>
+                        <div class="subject-item" data-code="LP2"><span class="subject-name">Linguagens de Programação II</span> <span class="subject-code">LP2</span></div>
+                        <div class="subject-item" data-code="PAA3"><span class="subject-name">Otimização Combinatória</span> <span class="subject-code">PAA3</span></div>
+                        <div class="subject-item" data-code="PLN"><span class="subject-name">Proc. de Linguagem Natural (NLP)</span> <span class="subject-code">PLN</span></div>
+                        <div class="subject-item" data-code="SDTF"><span class="subject-name">Sist. Distribuídos e Tolerantes a Falhas</span> <span class="subject-code">SDTF</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_08]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="ProjInt"><span class="subject-name">Projeto Integrador em Computação</span> <span class="subject-code">ProjInt</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>[Etapa_09]</summary>
+                    <div class="subject-list">
+                        <div class="subject-item" data-code="TCC"><span class="subject-name">Trabalho de Conclusão de Curso</span> <span class="subject-code">TCC</span></div>
+                    </div>
+                </details>
+            </div>
+
+            <h2>// FAQ (Dúvidas Frequentes)</h2>
+            <div class="curriculum-tree">
+
+                <details>
+                    <summary>Erro: Não sei se sou bom em matemática</summary>
+                    <div class="subject-list"><p>Calma. o curso começa do zero em Pré-Cálculo, caso precise. O pensamento computacional é mais sobre lógica, que será trabalhada e desenvolvida ao longo do curso, do que apenas contas. </p></div>
+                    </details>
+                    <details>
+                    <summary>Query: "O mercado está saturado?"</summary>
+                    <div class="subject-list">
+                        <p>
+                            Não. Faltam profissionais capazes de lidar com arquiteturas complexas. A UFRGS é uma das principais e mais renomadas universidades responsáveis pela formação dos mais qualificados Cientistas da Computação do país. Para esses indivíduos, dificilmente faltarão oportunidades.
+                        </p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Config: "Qual a diferença para Eng. de Computação?"</summary>
+                    <div class="subject-list">
+                        <p>
+                            Ciência foca no Software, Algoritmos e Dados. Engenharia foca no Hardware, Robótica e Eletrônica.
+                        </p>
+                </details>
+            </div>
+
+            <h2>// Contato</h2>
+
+            <div class="contact-grid">
+                <a href="mailto:cic-coordenacao@inf.ufrgs.br" class="contact-card">
+                    <span class="contact-label">[EMAIL]</span>
+                    <span class="contact-value">cic-coordenacao@inf.ufrgs.br</span>
+                </a>
+                <a href="https://instagram.com/inf_ufrgs" target="_blank" class="contact-card">
+                    <span class="contact-label">[INSTAGRAM]</span>
+                    <span class="contact-value">@inf_ufrgs</span>
+                </a>
+                <a href="https://linkedin.com/company/inf-ufrgs" target="_blank" class="contact-card">
+                    <span class="contact-label">[LINKEDIN]</span>
+                    <span class="contact-value">/company/inf-ufrgs</span>
+                </a>
+            </div>
+
+            <footer>
+                <div>root@inf-ufrgs:~#</div>
+                <div>Porto Alegre, RS</div>
+            </footer>
+
+        </div> </div>
+
+        <script src="script.js"></script>
+</body>
+</html>

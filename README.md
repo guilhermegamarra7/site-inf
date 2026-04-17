@@ -1,36 +1,53 @@
-# INF.UFRGS — Landing Page Ciência da Computação
-Uma landing page temática com estilo personalizado para apresentar o curso de Ciência da Computação da UFRGS (Instituto de Informática), com foco no novo currículo 2026.
+# 🎓 INF.UFRGS — Landing Page Ciência da Computação
 
-**Tecnologias:**
-- HTML5
-- CSS3 -> variáveis CSS, animações, design responsivo
-- JavaScript puro (Vanilla JS) -> sem frameworks ou dependências externas
-- localStorage -> para persistência do estado da IDE entre sessões
+Tecnologias: HTML5, CSS3, Vanilla JS
 
-Funcionalidades:
-🖥️ **IDE Interativa**
-Simula um editor de código com um snippet em C++
-O botão "Run Code" dispara uma animação de compilação no terminal
-Após a execução, o restante do conteúdo da página é revelado
-O estado é salvo via localStorage: ao recarregar, o conteúdo já aparece desbloqueado
-A janela da IDE é arrastável (drag & drop), com suporte a toque em mobile
+> **Demonstração ao vivo:** [Acessar a Landing Page](https://guilhermegamarra7.github.io/site-inf/)
 
-🌓 **Tema Claro / Escuro**
-Alternância entre modo claro e escuro via botão na navbar
+> Uma landing page temática e interativa criada para apresentar o curso de Ciência da Computação do Instituto de Informática da UFRGS, com foco na matriz curricular do novo currículo de 2026.
 
-📚 **Grade Curricular Interativa**
-Disciplinas organizadas por Etapas (1 a 9), exibidas em acordeões expansíveis
-Botões para Expandir Todos e Recolher Todos os acordeões
+## Sobre o Projeto
 
-🔗 **Visualização de Dependências**
-Clique em qualquer disciplina para destacar:
-🟣 Pré-requisitos (o que você precisa antes)
-🟢 O que ela desbloqueia (o que você pode cursar depois)
+Este projeto tem como objetivo proporcionar uma experiência imersiva e visualmente atraente para quem deseja conhecer a estrutura do curso. A página foi estruturada integralmente com tecnologias front-end nativas (sem dependência de frameworks externos), unindo design responsivo a mecânicas interativas que remetem ao ambiente real de desenvolvimento e programação.
 
-🗺️ **Trilhas de Carreira (Roadmaps)**
-Quatro trilhas temáticas que destacam as disciplinas relevantes para cada área:
+## Funcionalidades
 
-Estrutura de Arquivos:
-🗂️ index.html   # Estrutura e conteúdo da página
-🗂️ style.css    # Estilização (tema , dark/light mode, animações)
-🗂️ script.js    # Toda a lógica interativa (IDE, dependências, roadmaps, drag)
+* **🖥️ IDE Interativa (Gamificação)**
+    * Simula um editor de código real contendo um *snippet* em C++.
+    * O botão **"Run Code"** dispara uma animação de compilação no terminal integrado.
+    * **Desbloqueio de Conteúdo:** Após a execução bem-sucedida, o restante do conteúdo da página é revelado.
+    * **Persistência de Estado:** Utiliza `localStorage` para salvar o progresso. Ao recarregar a página, o conteúdo permanece acessível.
+    * **Interface Fluida:** A janela da IDE é arrastável (*drag & drop*) em computadores e possui suporte nativo a toque em dispositivos móveis.
+
+* **🌓 Tema Claro / Escuro**
+    * Alternância suave entre *Light Mode* e *Dark Mode* através de um controle na barra de navegação, integrado com variáveis CSS.
+
+* **📚 Grade Curricular Interativa**
+    * Organização clara das disciplinas por Etapas (1 a 9).
+    * Visualização em formato de acordeões expansíveis para otimizar o espaço em tela.
+    * Controles rápidos com botões para "Expandir Todos" e "Recolher Todos" os semestres.
+
+* **🔗 Mapeamento de Dependências**
+    * Sistema visual inteligente: ao clicar em qualquer disciplina, a interface destaca automaticamente:
+        * 🟣 **Pré-requisitos:** O que é necessário cursar antes.
+        * 🟢 **Desbloqueios:** Quais portas se abrem para os semestres seguintes.
+
+* **🗺️ Trilhas de Carreira (Roadmaps)**
+    * Apresentação de quatro trilhas temáticas que filtram e destacam as cadeiras mais relevantes para áreas específicas de atuação na tecnologia.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Semântica e estruturação limpa.
+* **CSS3:** Variáveis nativas para temas, animações fluidas, Flexbox/Grid e design totalmente responsivo (Mobile First).
+* **JavaScript (Vanilla JS):** Lógica interativa de manipulação do DOM, controle de dependências, mecânica de arrastar/soltar e sem frameworks de terceiros.
+* **Web Storage API:** Uso de `localStorage` para gerenciar a persistência de dados no navegador.
+
+## 📂 Estrutura de Arquivos
+
+A organização do repositório segue uma arquitetura direta e de fácil manutenção:
+
+```text
+📦 site-inf
+ ┣ 📜 index.html   # Estrutura principal, marcação e conteúdo
+ ┣ 📜 style.css    # Estilização global, temas (dark/light) e animações
+ ┗ 📜 script.js    # Lógica da IDE, dependências da grade curricular e interatividade

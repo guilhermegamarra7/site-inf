@@ -27,10 +27,10 @@ Clique em qualquer disciplina para destacar:
 🟣 Pré-requisitos (o que você precisa antes)
 🟢 O que ela desbloqueia (o que você pode cursar depois)
 
-🗺️ ** Trilhas de Carreira (Roadmaps)**
+🗺️ **Trilhas de Carreira (Roadmaps)**
 Quatro trilhas temáticas que destacam as disciplinas relevantes para cada área:
 
 Estrutura de Arquivos:
-├── index.html   # Estrutura e conteúdo da página
-├── style.css    # Estilização (tema , dark/light mode, animações)
-└── script.js    # Toda a lógica interativa (IDE, dependências, roadmaps, drag)
+🗂️ index.html   # Estrutura e conteúdo da página
+🗂️ style.css    # Estilização (tema , dark/light mode, animações)
+🗂️ script.js    # Toda a lógica interativa (IDE, dependências, roadmaps, drag)
